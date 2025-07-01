@@ -1,0 +1,195 @@
+
+/* .next-div{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(34, 34, 34, 0.8);
+    top: calc(158.5px);
+    border-radius: 20px;
+}   
+.next-icon-div{
+    width: 18px;
+    height: 18px;
+}
+.next-icon{
+    width: 100%;
+    height: 100%;
+} */
+    /* .carousel-control-prev{
+        padding: 5px;
+    }
+    .carousel-control-prev-icon{
+        margin-left: -151px;
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100% 100%;
+        background-color: black;
+        width: 40px;
+        padding: 23px 16px;
+        border-radius: 8px;
+    }
+
+    .carousel-control-next{
+        padding: 5px;
+    }
+    .carousel-control-next-icon{
+        margin-left: 155px;
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100% 100%;
+        background-color: black;
+        width: 40px;
+        padding: 23px 18px;
+        border-radius: 8px;
+    } */
+     .common{
+        width: 100%;
+        scrollbar-width: none;
+     }
+
+     /* @media (max-width: 319.98px)  { 
+        .catdiv{ 
+            width: 10%;  
+        }
+        .moviediv{ 
+         max-width: 65%;
+    
+        position: relative;
+        left: -51px;
+        padding: 10px 0px;
+        }
+      }
+     */   
+      @media (min-width: 320px)  { 
+        .catdiv{ 
+            width: 100%;  
+        }
+        .moviediv{ 
+         max-width: 100%;
+        position: relative;
+        left: 0px;
+        margin: 0px 0px;
+        
+        }
+        /* .carousel-item{ 
+         max-width: 100%;
+        position: relative;
+        left: 0px;
+        margin: 0px 100px;
+        } */
+        .common{ 
+         max-width: 100%;
+        
+        }
+      } /* */
+
+      @media (min-width: 425px) and (max-width: 767.98px)  { 
+
+        .recomendedmovies{ 
+            width: 134%;
+            }
+        .catdiv{ 
+            width: 77%; 
+              display: flex;
+            flex-wrap: wrap;    
+        }  
+       
+        .moviediv{ 
+        width: 150px;
+        width: 230px;
+        height: 120vh;
+        position: relative; 
+         left: 0px; 
+        padding: 10px 0px;
+        margin-top: 10px;
+        }
+        .carousel-item{ 
+         width: 100%;
+        
+        }
+
+        .imgdiv {
+        display: block;
+        flex-wrap: wrap;
+        padding: 5px 2px;
+        width: 15rem ;
+        height: 115vh;
+      }
+
+        .movieimg{
+        max-width: 100%;
+        height: 100vh;
+        margin: 0px 10px;
+        }
+
+        .fourthmoviediv{
+        position: relative;
+        left: 10px;
+        margin-right: 232px;
+        }
+
+        
+      }
+
+      @media (min-width: 768px) and (max-width: 1023.98px)  { 
+
+        .recomendedmovies{ 
+            width: 100%;
+            }
+        .catdiv{ 
+            width: 100%;
+            /* width: 77%; 
+              display: flex;
+            flex-wrap: wrap;*/    
+        }  
+       
+        .moviediv{ 
+        width: 150px;
+        
+        height: 120vh;
+        position: relative; 
+         left: 0px; 
+        padding: 10px 0px;
+        margin-top: 10px;
+        }
+        
+        .carousel-item{ 
+         width: 100%;
+        
+        }
+
+        .imgdiv {
+        
+        padding: 5px 0px;
+        width: 15px ;
+        height: 115vh;
+        max-width: 135px;
+        margin-left: 0px;
+      }
+
+        .movieimg{
+        max-width: 100%;
+        height: 100vh;
+        margin: 0px 10px;
+        }
+
+        /* .fourthmoviediv{
+        position: relative;
+        left: 10px;
+        margin-right: 232px;
+        } */
+
+        .carousel-item{
+            width: 150px;
+        /* margin-right: 10px; */
+      }
+      }
