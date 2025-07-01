@@ -124,14 +124,14 @@ function RecomendedMovies() {
   return (
     <>
 
-    <div className="common bg-warning ">
+    <div className="common">
 
       <div className=" recomendedmovies carousel slide mt-5 mb-5">
         <div className='fs-4 fw-semibold media-recommended ps-3  ms-5 w-25'>Recommended Movies </div>
       {/* <div className=""></div> */}
-        <div className="  border border-black catdiv bg-danger carousel-inner px-5 d-flex justify-content-evenly">
+        <div className=" catdiv carousel-inner px-5 d-flex justify-content-evenly">
 
-        <div className=' border border-black moviediv bg-info' style={{cursor:"pointer"}} >
+        <div className=' moviediv' style={{cursor:"pointer"}} >
             <div className="carousel-item active " >
                 <div className='imgdiv' style={{width:'13rem'}}>
                   <img src={Retro} className="movieimg d-block w-100 rounded-2" alt="..." onClick={handleRetroMovieClick}/>
@@ -142,7 +142,7 @@ function RecomendedMovies() {
         </div>
 
 
-        <div className=' border border-black moviediv bg-info' style={{cursor:"pointer"}} >
+        <div className=' moviediv' style={{cursor:"pointer"}} >
             <div className="carousel-item active ">
                 <div className='imgdiv' style={{width:'13rem'}}>
                   <img src={Family} className="movieimg d-block w-100 rounded-2" alt="..." onClick={handleTfamilyMovieClick}/>
@@ -152,7 +152,7 @@ function RecomendedMovies() {
             </div>
         </div>
 
-        <div className=' border border-black moviediv bg-info' style={{cursor:"pointer"}}>
+        <div className='moviediv' style={{cursor:"pointer"}}>
             <div className="carousel-item active ">
                 <div className='imgdiv' style={{width:'13rem'}}>
                   <img src={Hit} className="movieimg d-block w-100 rounded-2" alt="..." onClick={handleHitMovieClick}/>
@@ -162,7 +162,7 @@ function RecomendedMovies() {
             </div>
         </div>
 
-        <div className=' border border-black moviediv bg-info' style={{cursor:"pointer"}}>
+        <div className=' moviediv' style={{cursor:"pointer"}}>
             <div className="carousel-item active ">
                 <div className='imgdiv' style={{width:'13rem'}}>
                   <img src={Thunderbolds} className="movieimg d-block w-100 rounded-2" alt="..." onClick={handleThunderboltsMovieClick}/>
@@ -172,7 +172,7 @@ function RecomendedMovies() {
             </div>
         </div>
 
-        <div className=' border border-black moviediv fourthmoviediv bg-info' style={{cursor:"pointer"}}>
+        <div className=' moviediv fourthmoviediv' style={{cursor:"pointer"}}>
             <div className="carousel-item active ">
                 <div className='imgdiv' style={{width:'13rem'}}>
                   <img src={Thodarum} className="movieimg d-block w-100 rounded-2" alt="..." onClick={handleThodarumMovieClick}/>

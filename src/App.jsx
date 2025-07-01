@@ -106,13 +106,13 @@ import Thodarummurugan from './loading/Thodarum/Thodarummurugan';
 // Thodarum seat selection
 
 // import Seatlayout from './Numberofseats/Seatlayout.jsx';
-// import Bookingsummary from './Bookingsummary/Bookingsummary.jsx';
+import Bookingsummary from './Bookingsummary/Bookingsummary.jsx';
 
 
 
 import Footer from './footer/Footer';
-// import SeatSelection from './Seatselection.jsx';
-// import Summary from './Summary.jsx';
+import SeatSelection from './Seatselection.jsx';
+import Summary from './Summary.jsx';
 
 
 
@@ -144,9 +144,9 @@ function Home() {
       {/* <Popup/> */}
       {/* <Movieseatselection/> */}
       {/* <Seatlayout/> */}
-      {/*<Bookingsummary/> */}
       {/* <SeatSelection/> 
-      <Summary/>  */}
+      <Bookingsummary/>  */}
+      {/* <Summary/>  */}
       
 
 
