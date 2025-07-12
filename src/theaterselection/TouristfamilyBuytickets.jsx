@@ -19,16 +19,16 @@ function TouristfamilyBuytickets() {
     const navigate = useNavigate();
 
     const handleSeatSelectionCosmos = () => {
-    navigate('/touristfamily/buytickets/cosmosseatselection');
+    navigate('/touristfamily/buytickets/cosmoscinemaseatlayout');
   };
     const handleSeatSelectionKarpagam = () => {
-    navigate('/touristfamily/buytickets/karpagamseatselection');
+    navigate('/touristfamily/buytickets/karpagamcinemaseatlayout');
   };
     const handleSeatSelectionMurugan = () => {
-    navigate('/touristfamily/buytickets/muruganseatselection');
+    navigate('/touristfamily/buytickets/murugancinemaseatlayout');
   };
     const handleSeatSelectionKalpana = () => {
-    navigate('/touristfamily/buytickets/kalpanaseatselection');
+    navigate('/touristfamily/buytickets/kalpanacinemaseatlayout');
   };
 
   return (

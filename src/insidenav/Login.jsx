@@ -5,9 +5,9 @@ import { FaApple } from "react-icons/fa";
 import Indianflag from "/images/indianflag.svg"
 
 
-function Login() {
 
-    
+
+function Login() {
 
   return (
     <>
@@ -23,7 +23,7 @@ function Login() {
                             </div>
                             <div className="cls ">
                                 <div className="cls-2">
-                                    <RiCloseFill  className='clo '/>
+                                    <RiCloseFill  className='clo'/>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@ function Login() {
                                         
                                         <div className="continue-with-grandchild ">
 
-                                            <div className="continue-with-grandchild-1 ">
+                                            <div onSubmit={handleLogin} className="continue-with-grandchild-1 ">
                                                 <div className="continue-with-grandchild-1-1 ">
                                                     <div className="continue-with-google-div ">
                                                         <span className='continue-with-google-text'>

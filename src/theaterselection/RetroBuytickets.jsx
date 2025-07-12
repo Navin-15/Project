@@ -25,16 +25,16 @@ function RetroBuytickets() {
 //   };
 
     const handleSeatSelectionCosmos = () => {
-    navigate('/retro/buytickets/cosmosseatselection');
+    navigate('/retro/buytickets/cosmoscinemaseatlayout');
   };
     const handleSeatSelectionKarpagam = () => {
-    navigate('/retro/buytickets/karpagamseatselection');
+    navigate('/retro/buytickets/karpagamcinemaseatlayout');
   };
     const handleSeatSelectionMurugan = () => {
-    navigate('/retro/buytickets/muruganseatselection');
+    navigate('/retro/buytickets/murugancinemaseatlayout');
   };
     const handleSeatSelectionKalpana = () => {
-    navigate('/retro/buytickets/kalpanaseatselection');
+    navigate('/retro/buytickets/kalpanacinemaseatlayout');
   };
     
 

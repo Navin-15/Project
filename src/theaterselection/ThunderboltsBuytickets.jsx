@@ -19,16 +19,16 @@ function ThunderboltsBuytickets() {
     const navigate = useNavigate();
     
     const handleSeatSelectionCosmos = () => {
-    navigate('/thunderbolts/buytickets/cosmosseatselection');
+    navigate('/thunderbolts/buytickets/cosmoscinemaseatlayout');
   };
     const handleSeatSelectionKarpagam = () => {
-    navigate('/thunderbolts/buytickets/karpagamseatselection');
+    navigate('/thunderbolts/buytickets/karpagamcinemaseatlayout');
   };
     const handleSeatSelectionMurugan = () => {
-    navigate('/thunderbolts/buytickets/muruganseatselection');
+    navigate('/thunderbolts/buytickets/murugancinemaseatlayout');
   };
     const handleSeatSelectionKalpana = () => {
-    navigate('/thunderbolts/buytickets/kalpanaseatselection');
+    navigate('/thunderbolts/buytickets/kalpanacinemaseatlayout');
   };  
 
   return (

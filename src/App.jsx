@@ -46,66 +46,76 @@ import Eightbypraveen from './eventsinner/eventdetails/Eightbypraveen';
 import Movieseatselection from './loading/Movieseatselection';
 
 // Retro seat selection
+
 import RetroCosmoscinema from './Numberofseats/Retroseatlayout/RetroCosmoscinema';
 import RetroKarpagamcinema from './Numberofseats/Retroseatlayout/RetroKarpagamcinema';
 import RetroMurugancinema from './Numberofseats/Retroseatlayout/RetroMurugancinema';
 import RetroKalpanacinema from './Numberofseats/Retroseatlayout/RetroKalpanacinema';
 
-import Retrocosmos from './loading/Retro/Retrocosmos';
-import Retrokarpagam from './loading/Retro/Retrokarpagam';
-import Retromurugan from './loading/Retro/Retromurugan';
-import Retrokalpana from './loading/Retro/Retrokalpana';
+// import Retrocosmos from './loading/Retro/Retrocosmos';
+// import Retrokarpagam from './loading/Retro/Retrokarpagam';
+// import Retromurugan from './loading/Retro/Retromurugan';
+// import Retrokalpana from './loading/Retro/Retrokalpana';
+
 // Retro seat selection
 
 // Touristfamily seat selection
+
 import TouristCosmoscinema from './Numberofseats/Touristfamilyseatlayout/TouristCosmoscinema';
 import TouristKarpagamcinema from './Numberofseats/Touristfamilyseatlayout/TouristKarpagamcinema';
 import TouristMurugancinema from './Numberofseats/Touristfamilyseatlayout/TouristMurugancinema';
 import TouristKalpanacinema from './Numberofseats/Touristfamilyseatlayout/TouristKalpanacinema';
 
-import Touristcosmos from './loading/Tourist/Touristcosmos';
-import Touristkarpagam from './loading/Tourist/Touristkarpagam';
-import Touristmurugan from './loading/Tourist/Touristmurugan';
-import Touristkalpana from './loading/Tourist/Touristkalpana';
+// import Touristcosmos from './loading/Tourist/Touristcosmos';
+// import Touristkarpagam from './loading/Tourist/Touristkarpagam';
+// import Touristmurugan from './loading/Tourist/Touristmurugan';
+// import Touristkalpana from './loading/Tourist/Touristkalpana';
+
 // Touristfamily seat selection
 
 // Hit seat selection
+
 import HitCosmoscinema from './Numberofseats/Hitseatlayout/HitCosmoscinema';
 import HitKarpagamcinema from './Numberofseats/Hitseatlayout/HitKarpagamcinema';
 import HitMurugancinema from './Numberofseats/Hitseatlayout/HitMurugancinema';
 import HitKalpanacinema from './Numberofseats/Hitseatlayout/HitKalpanacinema';
 
-import Hitcosmos from './loading/Hit/Hitcosmos';
-import Hitkarpagam from './loading/Hit/Hitkarpagam';
-import Hitmurugan from './loading/Hit/Hitmurugan';
-import Hitkalpana from './loading/Hit/Hitkalpana';
+// import Hitcosmos from './loading/Hit/Hitcosmos';
+// import Hitkarpagam from './loading/Hit/Hitkarpagam';
+// import Hitmurugan from './loading/Hit/Hitmurugan';
+// import Hitkalpana from './loading/Hit/Hitkalpana';
+
 // Hit seat selection
 
 // Thunderbolts seat selection
+
 import ThunderboltsCosmoscinema from './Numberofseats/Thunderboltsseatlayout/ThunderboltsCosmoscinema';
 import ThunderboltsKarpagamcinema from './Numberofseats/Thunderboltsseatlayout/ThunderboltsKarpagamcinema';
 import ThunderboltsMurugancinema from './Numberofseats/Thunderboltsseatlayout/ThunderboltsMurugancinema';
 import ThunderboltsKalpanacinema from './Numberofseats/Thunderboltsseatlayout/ThunderboltsKalpanacinema';
 
-import Thunderboltscosmos from './loading/Thunderbolts/Thunderboltscosmos';
-import Thunderboltskarpagam from './loading/Thunderbolts/Thunderboltskarpagam';
-import Thunderboltskalpana from './loading/Thunderbolts/Thunderboltskalpana';
-import Thunderboltsmurugan from './loading/Thunderbolts/Thunderboltsmurugan';
+// import Thunderboltscosmos from './loading/Thunderbolts/Thunderboltscosmos';
+// import Thunderboltskarpagam from './loading/Thunderbolts/Thunderboltskarpagam';
+// import Thunderboltskalpana from './loading/Thunderbolts/Thunderboltskalpana';
+// import Thunderboltsmurugan from './loading/Thunderbolts/Thunderboltsmurugan';
+
 // Thunderbolts seat selection
 
 // Thodarum seat selection
+
 import ThodarumCosmoscinema from './Numberofseats/Thodarumseatlayout/ThodarumCosmoscinema';
 import ThodarumKarpagamcinema from './Numberofseats/Thodarumseatlayout/ThodarumKarpagamcinema';
 import ThodarumMurugancinema from './Numberofseats/Thodarumseatlayout/ThodarumMurugancinema';
 import ThodarumKalpanacinema from './Numberofseats/Thodarumseatlayout/ThodarumKalpanacinema';
 
-import Thodarumcosmos from './loading/Thodarum/Thodarumcosmos';
-import Thodarumkarpagam from './loading/Thodarum/Thodarumkarpagam';
-import Thodarumkalpana from './loading/Thodarum/Thodarumkalpana';
-import Thodarummurugan from './loading/Thodarum/Thodarummurugan';
+// import Thodarumcosmos from './loading/Thodarum/Thodarumcosmos';
+// import Thodarumkarpagam from './loading/Thodarum/Thodarumkarpagam';
+// import Thodarumkalpana from './loading/Thodarum/Thodarumkalpana';
+// import Thodarummurugan from './loading/Thodarum/Thodarummurugan';
+
 // Thodarum seat selection
 
-// import Seatlayout from './Numberofseats/Seatlayout.jsx';
+//  import Seatlayout2 from './Numberofseats/Seatlayout2.jsx';
 import Bookingsummary from './Bookingsummary/Bookingsummary.jsx';
 
 
@@ -114,9 +124,12 @@ import Footer from './footer/Footer';
 import SeatSelection from './Seatselection.jsx';
 import Summary from './Summary.jsx';
 
-
+import BookingSummaryPage from './Bookingsummary/BookingSummaryPage.jsx';
 
 // import Bookingsummary from './Bookingsummary/Bookingsummary.jsx';
+
+
+
 
 
 
@@ -129,8 +142,8 @@ function Home() {
       <Categories/>
       <Slider/>
       <RecomendedMovies/>
-      <Comedyshow/>
-      <Footer/>
+      {/* <Comedyshow/> */}
+      <Footer/> 
 
       
       {/* <Comedyshowinner/> */}
@@ -143,24 +156,10 @@ function Home() {
       {/* <Eightbypraveen/> */}
       {/* <Popup/> */}
       {/* <Movieseatselection/> */}
-      {/* <Seatlayout/> */}
+       {/* <Seatlayout2/>  */}
       {/* <SeatSelection/> 
       <Bookingsummary/>  */}
       {/* <Summary/>  */}
-      
-
-
-      
-      
-
-      
-      
-      
-      
-      
-
-
-
   </>
   );
 }
@@ -172,7 +171,12 @@ function App (){
    <BrowserRouter>
     
       {/* <Router> */}
+
+
         <Routes>
+
+            
+
             <Route path='/' element={<Home />} />
             <Route path='innerinput' element={<Innerinput />} />
             <Route path='cities' element={<Cities />} />
@@ -196,30 +200,30 @@ function App (){
 
             {/* seatselection */}
 
-            <Route path='retro/buytickets/cosmosseatselection' element={<Retrocosmos/>} />
+            {/* <Route path='retro/buytickets/cosmosseatselection' element={<Retrocosmos/>} />
             <Route path='retro/buytickets/karpagamseatselection' element={<Retrokarpagam/>} />
             <Route path='retro/buytickets/muruganseatselection' element={<Retromurugan/>} />
-            <Route path='retro/buytickets/kalpanaseatselection' element={<Retrokalpana/>} />
+            <Route path='retro/buytickets/kalpanaseatselection' element={<Retrokalpana/>} /> */}
 
-            <Route path='touristfamily/buytickets/cosmosseatselection' element={<Touristcosmos/>} />
+            {/* <Route path='touristfamily/buytickets/cosmosseatselection' element={<Touristcosmos/>} />
             <Route path='touristfamily/buytickets/karpagamseatselection' element={<Touristkarpagam/>} />
             <Route path='touristfamily/buytickets/muruganseatselection' element={<Touristmurugan/>} />
-            <Route path='touristfamily/buytickets/kalpanaseatselection' element={<Touristkalpana/>} />
+            <Route path='touristfamily/buytickets/kalpanaseatselection' element={<Touristkalpana/>} /> */}
 
-            <Route path='hit/buytickets/cosmosseatselection' element={<Hitcosmos/>} />
+            {/* <Route path='hit/buytickets/cosmosseatselection' element={<Hitcosmos/>} />
             <Route path='hit/buytickets/karpagamseatselection' element={<Hitkarpagam/>} />
             <Route path='hit/buytickets/muruganseatselection' element={<Hitmurugan/>} />
-            <Route path='hit/buytickets/kalpanaseatselection' element={<Hitkalpana/>} />
+            <Route path='hit/buytickets/kalpanaseatselection' element={<Hitkalpana/>} /> */}
 
-            <Route path='thunderbolts/buytickets/cosmosseatselection' element={<Thunderboltscosmos/>} />
+            {/* <Route path='thunderbolts/buytickets/cosmosseatselection' element={<Thunderboltscosmos/>} />
             <Route path='thunderbolts/buytickets/karpagamseatselection' element={<Thunderboltskarpagam/>} />
             <Route path='thunderbolts/buytickets/kalpanaseatselection' element={<Thunderboltskalpana/>} />
-            <Route path='thunderbolts/buytickets/muruganseatselection' element={<Thunderboltsmurugan/>} />
+            <Route path='thunderbolts/buytickets/muruganseatselection' element={<Thunderboltsmurugan/>} /> */}
 
-            <Route path='thodarum/buytickets/cosmosseatselection' element={<Thodarumcosmos/>} />
+            {/* <Route path='thodarum/buytickets/cosmosseatselection' element={<Thodarumcosmos/>} />
             <Route path='thodarum/buytickets/karpagamseatselection' element={<Thodarumkarpagam/>} />
             <Route path='thodarum/buytickets/kalpanaseatselection' element={<Thodarumkalpana/>} />
-            <Route path='thodarum/buytickets/muruganseatselection' element={<Thodarummurugan/>} />
+            <Route path='thodarum/buytickets/muruganseatselection' element={<Thodarummurugan/>} /> */}
 
 
             {/* <Route path='touristfamily/buytickets/seatselection' element={<Movieseatselection/>} />
@@ -229,31 +233,46 @@ function App (){
 
             {/* seatlayout */}
             
-            <Route path='retro/buytickets/cosmosseatselection/Cosmoscinemaseatlayout' element={<RetroCosmoscinema/>} />
-            <Route path='retro/buytickets/karpagamseatselection/Karpagamcinemaseatlayout' element={<RetroKarpagamcinema/>} />
-            <Route path='retro/buytickets/muruganseatselection/Murugancinemaseatlayout' element={<RetroMurugancinema/>} />
-            <Route path='retro/buytickets/kalpanaseatselection/Kalpanacinemaseatlayout' element={<RetroKalpanacinema/>} />
+            <Route path='retro/buytickets/Cosmoscinemaseatlayout' element={<RetroCosmoscinema/>} />
+            <Route path='retro/buytickets/Karpagamcinemaseatlayout' element={<RetroKarpagamcinema/>} />
+            <Route path='retro/buytickets/Murugancinemaseatlayout' element={<RetroMurugancinema/>} />
+            <Route path='retro/buytickets/Kalpanacinemaseatlayout' element={<RetroKalpanacinema/>} />
 
-            <Route path='touristfamily/buytickets/cosmosseatselection/Cosmoscinemaseatlayout' element={<TouristCosmoscinema/>} />
-            <Route path='touristfamily/buytickets/karpagamseatselection/Karpagamcinemaseatlayout' element={<TouristKarpagamcinema/>} />
-            <Route path='touristfamily/buytickets/muruganseatselection/Murugancinemaseatlayout' element={<TouristMurugancinema/>} />
-            <Route path='touristfamily/buytickets/kalpanaseatselection/Kalpanacinemaseatlayout' element={<TouristKalpanacinema/>} />
+            <Route path='touristfamily/buytickets/Cosmoscinemaseatlayout' element={<TouristCosmoscinema/>} />
+            <Route path='touristfamily/buytickets/Karpagamcinemaseatlayout' element={<TouristKarpagamcinema/>} />
+            <Route path='touristfamily/buytickets/Murugancinemaseatlayout' element={<TouristMurugancinema/>} />
+            <Route path='touristfamily/buytickets/Kalpanacinemaseatlayout' element={<TouristKalpanacinema/>} />
 
-            <Route path='hit/buytickets/cosmosseatselection/Cosmoscinemaseatlayout' element={<HitCosmoscinema/>} />
-            <Route path='hit/buytickets/karpagamseatselection/Karpagamcinemaseatlayout' element={<HitKarpagamcinema/>} />
-            <Route path='hit/buytickets/muruganseatselection/Murugancinemaseatlayout' element={<HitMurugancinema/>} />
-            <Route path='hit/buytickets/kalpanaseatselection/Kalpanacinemaseatlayout' element={<HitKalpanacinema/>} />
+            <Route path='hit/buytickets/Cosmoscinemaseatlayout' element={<HitCosmoscinema/>} />
+            <Route path='hit/buytickets/Karpagamcinemaseatlayout' element={<HitKarpagamcinema/>} />
+            <Route path='hit/buytickets/Murugancinemaseatlayout' element={<HitMurugancinema/>} />
+            <Route path='hit/buytickets/Kalpanacinemaseatlayout' element={<HitKalpanacinema/>} />
 
-            <Route path='thunderbolts/buytickets/cosmosseatselection/Cosmoscinemaseatlayout' element={<ThunderboltsCosmoscinema/>} />
-            <Route path='thunderbolts/buytickets/karpagamseatselection/Karpagamcinemaseatlayout' element={<ThunderboltsKarpagamcinema/>} />
-            <Route path='thunderbolts/buytickets/muruganseatselection/Murugancinemaseatlayout' element={<ThunderboltsMurugancinema/>} />
-            <Route path='thunderbolts/buytickets/kalpanaseatselection/Kalpanacinemaseatlayout' element={<ThunderboltsKalpanacinema/>} />
+            <Route path='thunderbolts/buytickets/Cosmoscinemaseatlayout' element={<ThunderboltsCosmoscinema/>} />
+            <Route path='thunderbolts/buytickets/Karpagamcinemaseatlayout' element={<ThunderboltsKarpagamcinema/>} />
+            <Route path='thunderbolts/buytickets/Murugancinemaseatlayout' element={<ThunderboltsMurugancinema/>} />
+            <Route path='thunderbolts/buytickets/Kalpanacinemaseatlayout' element={<ThunderboltsKalpanacinema/>} />
 
-            <Route path='thodarum/buytickets/cosmosseatselection/Cosmoscinemaseatlayout' element={<ThodarumCosmoscinema/>} />
-            <Route path='thodarum/buytickets/karpagamseatselection/Karpagamcinemaseatlayout' element={<ThodarumKarpagamcinema/>} />
-            <Route path='thodarum/buytickets/muruganseatselection/Murugancinemaseatlayout' element={<ThodarumMurugancinema/>} />
-            <Route path='thodarum/buytickets/kalpanaseatselection/Kalpanacinemaseatlayout' element={<ThodarumKalpanacinema/>} />
+            <Route path='thodarum/buytickets/Cosmoscinemaseatlayout' element={<ThodarumCosmoscinema/>} />
+            <Route path='thodarum/buytickets/Karpagamcinemaseatlayout' element={<ThodarumKarpagamcinema/>} />
+            <Route path='thodarum/buytickets/Murugancinemaseatlayout' element={<ThodarumMurugancinema/>} />
+            <Route path='thodarum/buytickets/Kalpanacinemaseatlayout' element={<ThodarumKalpanacinema/>} />
 
+            {/* Booking Summary */}
+
+            <Route path="/booking-summary" element={<BookingSummaryPage />} />
+
+            {/* Booking Summary */}
+
+            {/* Booking Summary Modify Section  */}
+            
+            {/* Hit */}
+            <Route path="/seatlayout" element={<HitCosmoscinema />} />
+
+            {/* Hit */}
+
+            {/* Booking Summary Modify Section  */}
+            
             {/* events */}
 
             <Route path='events/comedyshow' element={<Comedyshowinner />} />

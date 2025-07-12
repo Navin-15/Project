@@ -19,16 +19,16 @@ function HitBuytickets() {
     const navigate = useNavigate();
 
     const handleSeatSelectionCosmos = () => {
-    navigate('/hit/buytickets/cosmosseatselection');
+    navigate('/hit/buytickets/cosmoscinemaseatlayout');
   };
     const handleSeatSelectionKarpagam = () => {
-    navigate('/hit/buytickets/karpagamseatselection');
+    navigate('/hit/buytickets/karpagamcinemaseatlayout');
   };
     const handleSeatSelectionMurugan = () => {
-    navigate('/hit/buytickets/muruganseatselection');
+    navigate('/hit/buytickets/murugancinemaseatlayout');
   };
     const handleSeatSelectionKalpana = () => {
-    navigate('/hit/buytickets/kalpanaseatselection');
+    navigate('/hit/buytickets/kalpanacinemaseatlayout');
   };
     
 

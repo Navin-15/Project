@@ -20,16 +20,16 @@ function ThodrumBuytickets() {
     
     
     const handleSeatSelectionCosmos = () => {
-    navigate('/thodarum/buytickets/cosmosseatselection');
+    navigate('/thodarum/buytickets/cosmoscinemaseatlayout');
   };
     const handleSeatSelectionKarpagam = () => {
-    navigate('/thodarum/buytickets/karpagamseatselection');
+    navigate('/thodarum/buytickets/karpagamcinemaseatlayout');
   };
     const handleSeatSelectionMurugan = () => {
-    navigate('/thodarum/buytickets/muruganseatselection');
+    navigate('/thodarum/buytickets/murugancinemaseatlayout');
   };
     const handleSeatSelectionKalpana = () => {
-    navigate('/thodarum/buytickets/kalpanaseatselection');
+    navigate('/thodarum/buytickets/kalpanacinemaseatlayout');
   };  
 
   return (
