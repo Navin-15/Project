@@ -116,7 +116,7 @@ import ThodarumKalpanacinema from './Numberofseats/Thodarumseatlayout/ThodarumKa
 // Thodarum seat selection
 
 //  import Seatlayout2 from './Numberofseats/Seatlayout2.jsx';
-import Bookingsummary from './Bookingsummary/Bookingsummary.jsx';
+// import Bookingsummary from './Bookingsummary/Bookingsummary.jsx';
 
 
 
@@ -125,6 +125,7 @@ import SeatSelection from './Seatselection.jsx';
 import Summary from './Summary.jsx';
 
 import BookingSummaryPage from './Bookingsummary/BookingSummaryPage.jsx';
+
 
 // import Bookingsummary from './Bookingsummary/Bookingsummary.jsx';
 
@@ -138,12 +139,14 @@ function Home() {
   return (
    <>
    
-      <Navbar/>
+       <Navbar/>
       <Categories/>
       <Slider/>
       <RecomendedMovies/>
       {/* <Comedyshow/> */}
-      <Footer/> 
+      <Footer/>  *
+
+      
 
       
       {/* <Comedyshowinner/> */}
@@ -193,6 +196,9 @@ function App (){
             {/* theaterselection */}
 
             <Route path='retro/buytickets' element={<RetroBuytickets />} />
+            <Route path="/retro/buytickets/:screenName" element={<RetroCosmoscinema />} />
+            <Route path="/retro/buytickets/:screenName" element={<RetroKarpagamcinema />} />
+
             <Route path='touristfamily/buytickets' element={<TouristfamilyBuytickets />} />
             <Route path='hit/buytickets' element={<HitBuytickets />} />
             <Route path='thunderbolts/buytickets' element={<ThunderboltsBuytickets />} />
@@ -233,8 +239,9 @@ function App (){
 
             {/* seatlayout */}
             
-            <Route path='retro/buytickets/Cosmoscinemaseatlayout' element={<RetroCosmoscinema/>} />
-            <Route path='retro/buytickets/Karpagamcinemaseatlayout' element={<RetroKarpagamcinema/>} />
+          
+            {/* <Route path='retro/buytickets/Cosmoscinemaseatlayout' element={<RetroCosmoscinema/>} /> */}
+            {/* <Route path='retro/buytickets/Karpagamcinemaseatlayout' element={<RetroKarpagamcinema/>} /> */}
             <Route path='retro/buytickets/Murugancinemaseatlayout' element={<RetroMurugancinema/>} />
             <Route path='retro/buytickets/Kalpanacinemaseatlayout' element={<RetroKalpanacinema/>} />
 

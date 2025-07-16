@@ -3,11 +3,17 @@ import Googlelogo from "/images/googlelogo.svg"
 import Email from "/images/email.svg"
 import { FaApple } from "react-icons/fa";
 import Indianflag from "/images/indianflag.svg"
-
+import { useNavigate } from 'react-router-dom';
 
 
 
 function Login() {
+const navigate = useNavigate();
+
+const GoBack = () => {
+    window.scrollTo(0, 0);
+     navigate(-1);
+  };
 
   return (
     <>
@@ -23,7 +29,7 @@ function Login() {
                             </div>
                             <div className="cls ">
                                 <div className="cls-2">
-                                    <RiCloseFill  className='clo'/>
+                                    <RiCloseFill  className='clo' onClick={GoBack}/>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +41,7 @@ function Login() {
                                         
                                         <div className="continue-with-grandchild ">
 
-                                            <div onSubmit={handleLogin} className="continue-with-grandchild-1 ">
+                                            <div className="continue-with-grandchild-1 ">
                                                 <div className="continue-with-grandchild-1-1 ">
                                                     <div className="continue-with-google-div ">
                                                         <span className='continue-with-google-text'>

@@ -633,6 +633,16 @@ function Navbar() {
     navigate('/');
   };
 
+  const handleCurrentLocation = () => {
+    navigate('/cities');
+  };
+
+  const handleSignin = () => {
+    navigate('/login');
+  };
+
+
+
 
   const handleClosePopup = () => {
     setShowLocationPopup(false);
@@ -669,7 +679,7 @@ function Navbar() {
             onClick={() => setShowLocationPopup(true)}
             style={{ cursor: 'pointer' }}
           >
-            <span className="coimbatore ">{city}</span>
+            <span className="coimbatore " onClick={handleCurrentLocation}>{city}</span>
             <img className="dropdownimg " src={dropdownimg} alt="Dropdown" />
           </div>
 {/* ------------------------------------------------------------------------------------------------------------ */}
@@ -681,9 +691,9 @@ function Navbar() {
             // style={{ cursor: 'pointer' }}
           >
                 <div className=" signburger">
-                    {/* <span className="signin border border-black">Sign in</span> */}
-                    <span className="signin  " onClick={() => setShowSignInPopup(true)}
-                          style={{ cursor: 'pointer' }} >Sign in</span>
+                    <span className="signin border border-black" onClick={handleSignin}>Sign in</span> 
+                    {/* <span className="signin  " onClick={() => setShowSignInPopup(true)}
+                          style={{ cursor: 'pointer' }} >Sign in</span> */}
                           
 
 {/* ------------------------------------------------------------------------------------------------------------ */}
@@ -896,24 +906,24 @@ function Navbar() {
       {/* <Footer/> */}
 
       {/* Location Popup */}
-      {showLocationPopup && (
+      {/* {showLocationPopup && (
         <div className="popup-overlay">
           <div className="popup-content" ref={locationPopupRef} onClick={(e) => e.stopPropagation()}>
             <button onClick={handleClosePopup} className="close-button"></button>
             <Cities />
           </div>
         </div>
-      )}
+      )} */}
 
       {/* Sign In Popup */}
-      {showSignInPopup && (
+      {/* {showSignInPopup && (
         <div className="popup-overlay">
           <div className="popup-content" ref={signInPopupRef} onClick={(e) => e.stopPropagation()}>
             <button onClick={handleClosePopup} className="close-button"></button>
             <Login />
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 }

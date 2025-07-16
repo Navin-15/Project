@@ -2,8 +2,16 @@ import React from 'react'
 import { SlArrowLeft } from "react-icons/sl";
 import { RiCloseFill } from "react-icons/ri";
 import { IoIosHeart } from "react-icons/io";
+import { useNavigate } from 'react-router-dom';
 
 function Innerinput() {
+
+        const navigate = useNavigate();
+
+    const GoBack = () => {
+    window.scrollTo(0, 0);
+     navigate(-1);
+  };
         
   return (
     <>
@@ -11,13 +19,13 @@ function Innerinput() {
         <div className="innerinputsearchdiv row">
 
             <span className=' col-4  leftspan '>
-                <SlArrowLeft className='leftarrow ' />
+                <SlArrowLeft className='leftarrow ' onClick={GoBack} />
             </span>
 
             <input className=' col-4 innerinputfield '  type="search"  placeholder='Search for Movies , Events, plays, Sports and Activities'/>
 
             <span className=' col-4 closespan '>
-                <RiCloseFill className='close '/>
+                <RiCloseFill className='close ' onClick={GoBack}/>
             </span>
         </div>
 

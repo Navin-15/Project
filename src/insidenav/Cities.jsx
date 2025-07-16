@@ -16,6 +16,8 @@ import Koch from '/images/koch.jpeg'
 
 
 function Cities() {
+
+    
   return (
     <>
     <div className="city-main-div container">
@@ -38,7 +40,7 @@ function Cities() {
                     <div className="target-icon-div ">
                         <ImTarget className='target-img'/>
                     </div>
-                    <div onClick={handleCurrentLocation} className="target-text">Detect my location</div>
+                    <div className="target-text">Detect my location</div>
                 </div>
             </div>
 
