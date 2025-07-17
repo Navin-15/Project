@@ -20,11 +20,12 @@ function RetroBuytickets() {
     const navigate = useNavigate();
 
     // Modified handleSeatSelection functions to pass theater name and time
-    const handleSeatSelection = (theaterName, showTime, layoutPath) => {
+    const handleSeatSelection = (theaterName, showTime, screen, layoutPath) => {
         navigate(layoutPath, {
             state: {
                 theater: theaterName,
                 time: showTime,
+                screen: screen,
                 movieName: "Retro",  // Assuming "Retro" is static for this page
                 
                 

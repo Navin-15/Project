@@ -601,6 +601,7 @@ const Seatlayout = () => {
     const [selectedTime, setSelectedTime] = useState("");
     const [theaterName, setTheaterName] = useState(""); // State to store theater name
     const [movieName, setMovieName] = useState(""); // State to store movie name
+    const [screen, setSelectedScreen] = useState(""); // State to store movie name
  
 
 
@@ -610,6 +611,7 @@ const Seatlayout = () => {
             setTheaterName(location.state.theater || "");
             setSelectedTime(location.state.time || "");
             setMovieName(location.state.movieName || "");
+            setSelectedScreen(location.state.screen || "");
             if (location.state.selectedSeats) {
                 setSelectedSeats(location.state.selectedSeats);
             }
@@ -642,7 +644,8 @@ const Seatlayout = () => {
             selectedSeats,
             totalPrice,
             date: selectedDate.toLocaleDateString(),
-            time: selectedTime // Use state variable
+            time: selectedTime, // Use state variable
+            screen: screen // Use state variable
         };
 
         // Immediately mark selected seats as booked (this logic might need backend integration for persistence)
@@ -680,7 +683,7 @@ const Seatlayout = () => {
     return (
         <>
             {/* Header */}
-            <div className="toppy bg-white">
+            <div className="toppy ">
                 <FaChevronLeft onClick={handlePreviousPage} className='fs-5' style={{ position: "absolute", top: "20px", left: "20px", cursor: "pointer" }} />
                 <div className="mx-5">
                     <div className="p-2">
@@ -695,11 +698,13 @@ const Seatlayout = () => {
                                 {selectedDate.toLocaleDateString()}
                             </span>
                              &nbsp;&nbsp;
-                            <span style={{ fontSize: "13px", fontWeight: "700", color: "rgb(88, 86, 86)", backgroundColor: "rgba(33, 164, 96, 1)",padding: " 8px 10px",position: "relative",bottom: "8px" , color: "rgba(255, 255, 255, 1)", borderRadius: "2px" }}>
+                            <span style={{ fontSize: "13px", fontWeight: "700", color: "rgb(88, 86, 86)", backgroundColor: "rgba(58, 130, 93, 1)",padding: " 8px 10px",position: "relative",bottom: "8px" , color: "rgba(255, 255, 255, 1)", borderRadius: "2px" }}>
                                 {selectedTime} {/* Display selected time */}
                             </span>
                              &nbsp;&nbsp;
-                            
+                            <span style={{ fontSize: "13px", fontWeight: "700", color: "rgb(88, 86, 86)", backgroundColor: "rgba(58, 130, 93, 1)",padding: " 8px 10px",position: "relative",bottom: "8px" , color: "rgba(255, 255, 255, 1)", borderRadius: "2px" }}>
+                                {screen} {/* Display selected screen */}
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -772,7 +777,7 @@ const Seatlayout = () => {
             </div>
 
             {/* Pay Button */}
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center paybutton">
                 <button onClick={handlepay} className="btn btn-danger w-25 my-3" disabled={selectedSeats.length === 0}>
                     Pay ₹{totalPrice}
                 </button>

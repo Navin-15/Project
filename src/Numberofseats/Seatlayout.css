@@ -1,7 +1,9 @@
 .toppy{
     position: sticky;
     top: 0;
+    background-color: beige;
 }
+
 .timelistitem{
     border:1px solid green;
     width: 90px;
@@ -24,7 +26,9 @@
     /* position: relative; */
     /* z-index: 1; */
     /* zoom: 1; */
+    margin: 10px auto ;
     padding: 30px 30px;
+    background-color: rgb(248, 244, 244) ;
     /* background: #fafafa; */
 }
 .block{

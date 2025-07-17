@@ -75,7 +75,7 @@ import axios from 'axios';
 function BookingSummaryPage() {
     const location = useLocation();
     // const navigate = useNavigate();
-    const { movieName, theater, selectedSeats, totalPrice, date, time } = location.state || {};
+    const { movieName, theater, selectedSeats, totalPrice, date, time, screen } = location.state || {};
 
     const handleConfirmBooking = async () => {
   const bookingData = {
@@ -86,7 +86,7 @@ function BookingSummaryPage() {
     totalPrice,
     date,
     time,
-    
+    screen,
   };
 
   
@@ -145,7 +145,7 @@ function BookingSummaryPage() {
                 <div className="card p-4 shadow-sm">
                     <p className="card-text fw-medium"><strong>Theater:</strong> {theater}</p>
                     <p className="card-text fw-medium"><strong>Movie:</strong> {movieName}</p>
-                    {/* <p className="card-text fw-medium"><strong>Screen:</strong> {screen}</p> */}
+                    <p className="card-text fw-medium"><strong>Screen:</strong> {screen}</p> 
                     <p className="card-text"><strong>Date:</strong> {date}</p>
                     <p className="card-text"><strong>Time:</strong> {time}</p>
                     <p className="card-text"><strong>Selected Seats:</strong> {selectedSeats.map(seat => seat.id).join(', ')}</p>
