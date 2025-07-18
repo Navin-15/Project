@@ -78,7 +78,7 @@ function BookingSummaryPage() {
     const { movieName, theater, selectedSeats, totalPrice, date, time, screen } = location.state || {};
 
     const handleConfirmBooking = async () => {
-  const bookingData = {
+    const bookingData = {
     theater: theater,
     moviename: movieName,
     seats: selectedSeats.map(s => s.id),
@@ -102,21 +102,6 @@ function BookingSummaryPage() {
     console.error("❌ Error saving booking:", error);
   }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     // const handleBackToHome = () => {

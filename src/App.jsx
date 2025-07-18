@@ -196,8 +196,8 @@ function App (){
             {/* theaterselection */}
 
             <Route path='retro/buytickets' element={<RetroBuytickets />} />
-            <Route path="/retro/buytickets/:screenName" element={<RetroCosmoscinema />} />
-            <Route path="/retro/buytickets/:screenName" element={<RetroKarpagamcinema />} />
+            {/* <Route path="/retro/buytickets/:screenName" element={<RetroCosmoscinema />} />
+            <Route path="/retro/buytickets/:screenName" element={<RetroKarpagamcinema />} /> */}
 
             <Route path='touristfamily/buytickets' element={<TouristfamilyBuytickets />} />
             <Route path='hit/buytickets' element={<HitBuytickets />} />
@@ -240,8 +240,8 @@ function App (){
             {/* seatlayout */}
             
           
-            {/* <Route path='retro/buytickets/Cosmoscinemaseatlayout' element={<RetroCosmoscinema/>} /> */}
-            {/* <Route path='retro/buytickets/Karpagamcinemaseatlayout' element={<RetroKarpagamcinema/>} /> */}
+            <Route path='retro/buytickets/Cosmoscinemaseatlayout' element={<RetroCosmoscinema/>} />
+            <Route path='retro/buytickets/Karpagamcinemaseatlayout' element={<RetroKarpagamcinema/>} />
             <Route path='retro/buytickets/Murugancinemaseatlayout' element={<RetroMurugancinema/>} />
             <Route path='retro/buytickets/Kalpanacinemaseatlayout' element={<RetroKalpanacinema/>} />
 
