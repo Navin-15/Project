@@ -25,6 +25,8 @@ const ROWS = {
 const Seatlayout = () => {
     const navigate = useNavigate();
     const location = useLocation(); // Use useLocation hook to access state
+
+
     const [selectedSeats, setSelectedSeats] = useState([]);
     const [selectedDate, setSelectedDate] = useState(new Date());
     const [bookedSeats, setBookedSeats] = useState([]);
@@ -33,9 +35,8 @@ const Seatlayout = () => {
     const [movieName, setMovieName] = useState(""); // State to store movie name
     const [screen, setSelectedScreen] = useState(""); // State to store movie name
  
-
-
-    useEffect(() => {
+//----------------------------------------------------============================================
+useEffect(() => {
         // Retrieve data from location.state
         if (location.state) {
             setTheaterName(location.state.theater || "");
@@ -48,27 +49,59 @@ const Seatlayout = () => {
         }
 
         const fetchBookedSeats = async () => {
-            try {
-                const response = await axios.get('http://localhost:5000/api/bookings');
-                const allBooked = response.data.flatMap(b => b.seats);
-                setBookedSeats(allBooked);
-            } catch (err) { console.error(err); }
-        };
-        fetchBookedSeats();
-    }, [location.state]); // Add location.state to dependency array
+    try {
+      const params = {
+        theater: theaterName,
+        moviename: movieName,
+        date: selectedDate.toLocaleDateString(),
+        time: selectedTime,
+        screen: screen
+      };
+      const response = await axios.get('http://localhost:5000/api/bookings', { params });
+      const allBooked = response.data.flatMap(b => b.seats);
+      setBookedSeats(allBooked);
+    } catch(err) { console.error(err); }
+  };
+
+  if (theaterName && movieName && selectedTime && screen) {
+    fetchBookedSeats();
+  }
+}, [theaterName, movieName, selectedDate, selectedTime, screen]);
 
 
+
+
+
+    // useEffect(() => {
+    //     // Retrieve data from location.state
+    //     if (location.state) {
+    //         setTheaterName(location.state.theater || "");
+    //         setSelectedTime(location.state.time || "");
+    //         setMovieName(location.state.movieName || "");
+    //         setSelectedScreen(location.state.screen || "");
+    //         if (location.state.selectedSeats) {
+    //             setSelectedSeats(location.state.selectedSeats);
+    //         }
+    //     }
+
+    //     const fetchBookedSeats = async () => {
+    //         try {
+    //             const response = await axios.get('http://localhost:5000/api/bookings');
+    //             const allBooked = response.data.flatMap(b => b.seats);
+    //             setBookedSeats(allBooked);
+    //         } catch (err) { console.error(err); }
+    //     };
+    //     fetchBookedSeats();
+    // }, [location.state]); // Add location.state to dependency array
+
+//----------------------------------------------------============================================
     const handlePreviousPage = () => {
         window.scrollTo(0, 0);
         navigate(-1);
     };
 
     const handlepay = () => {
-        if (selectedSeats.length === 0) {
-            alert("Please select at least one seat before paying.");
-            return;
-        }
-
+        
         const summaryData = {
             movieName: movieName, // Use state variable
             theater: theaterName, // Use state variable
@@ -78,6 +111,11 @@ const Seatlayout = () => {
             time: selectedTime, // Use state variable
             screen: screen // Use state variable
         };
+
+        if (selectedSeats.length === 0) {
+            alert("Please select at least one seat before paying.");
+            return;
+        }
 
         // Immediately mark selected seats as booked (this logic might need backend integration for persistence)
         setBookedSeats(prev => [...prev, ...selectedSeats.map(s => s.id)]);

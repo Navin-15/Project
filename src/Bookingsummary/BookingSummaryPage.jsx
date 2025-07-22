@@ -69,12 +69,11 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-// import Navbar from '../topend/Navbar'; // Assuming these paths are correct
-// import Footer from '../footer/Footer';
+
 
 function BookingSummaryPage() {
     const location = useLocation();
-    // const navigate = useNavigate();
+    
     const { movieName, theater, selectedSeats, totalPrice, date, time, screen } = location.state || {};
 
     const handleConfirmBooking = async () => {
@@ -96,7 +95,7 @@ function BookingSummaryPage() {
       alert("✅ Booking confirmed!");
       console.log('Bookingdata:', bookingData);
 
-      // navigate('/seatlayout');
+     
     }
   } catch (error) {
     console.error("❌ Error saving booking:", error);
@@ -104,20 +103,18 @@ function BookingSummaryPage() {
 };
 
 
-    // const handleBackToHome = () => {
-    //     navigate('/'); // Navigate to your home page or a relevant page
-    // };
+   
 
     if (!location.state) {
         return (
             <div>
-                {/* <Navbar /> */}
+               
                 <div className="container my-5">
                     <h2>No Booking Information Found</h2>
                     <p>Please go back and select a movie and seats to view your booking summary.</p>
                     <button className="btn btn-primary" onClick={handleBackToHome}>Back to Home</button>
                 </div>
-                {/* <Footer /> */}
+                
             </div>
         );
     }
@@ -136,13 +133,13 @@ function BookingSummaryPage() {
                     <p className="card-text"><strong>Selected Seats:</strong> {selectedSeats.map(seat => seat.id).join(', ')}</p>
                     <h4 className="mt-2"><strong className='text-danger'>Total Price:</strong> ₹{totalPrice}</h4>
                 </div>
-                {/* <button className="btn btn-primary mt-4" onClick={handleBackToHome}>Done</button> */}
+                
                 <div className="mt-4 d-flex gap-3">
                     <button className="btn btn-success" onClick={handleConfirmBooking}>Confirm Booking</button>
-                    {/* <button className="btn btn-warning" onClick={handleModify}>Modify Selection</button> */}
+                    
                 </div>
             </div>
-            {/* <Footer /> */}
+            
         </>
     );
 }
