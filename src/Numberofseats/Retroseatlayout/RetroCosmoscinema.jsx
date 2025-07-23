@@ -67,7 +67,7 @@ useEffect(() => {
     fetchBookedSeats();
   }
 }, [theaterName, movieName, selectedDate, selectedTime, screen]);
-
+//-------------------------------------------------------------------------------------------------------
 
 
 
