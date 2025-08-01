@@ -1,4 +1,5 @@
-import React from 'react'
+
+import React, { useState } from 'react'
 import './App.css';
 import './cat/Categories.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -10,7 +11,8 @@ import './banner/Slider.css';
 import Slider from './banner/Slider';
 
 import Cities from './insidenav/Cities';
-import Login from './insidenav/Login';
+import Login from './Login';
+// import Login from './insidenav/Login';
 import RecomendedMovies from './moviecat/RecomendedMovies';
 
 import Rms from './sections/Rms';
@@ -125,26 +127,43 @@ import SeatSelection from './Seatselection.jsx';
 import Summary from './Summary.jsx';
 
 import BookingSummaryPage from './Bookingsummary/BookingSummaryPage.jsx';
-
-
 // import Bookingsummary from './Bookingsummary/Bookingsummary.jsx';
 
-
-
-
+//--------Adminpanel 
+import Adminheader from './Adminpanel/AdminHead/Adminheader.jsx'
+import Adminsidebar from './Adminpanel/AdminSide/Adminsidebar.jsx'
+import Adminhome from './Adminpanel/AdminHome/Adminhome.jsx'
+import Register from './Adminpanel/Register/Register.jsx'
+import AdminCategories from './Adminpanel/Theaterdetails/AdminCategories.jsx'
 
 
 
 function Home() {
+  const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
+
+  const OpenSidebar = () => {
+    setOpenSidebarToggle(!openSidebarToggle)
+  }
+
   return (
    <>
-   
-       <Navbar/>
+      
+ 
+        {/* <div className="grid-container ">
+
+          <Adminheader OpenSidebar={OpenSidebar}/>
+          <Adminsidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/>
+          <Adminhome/>
+
+         </div>  */}
+
+ 
+      <Navbar/>
       <Categories/>
       <Slider/>
-      <RecomendedMovies/>
+      <RecomendedMovies/>  
       {/* <Comedyshow/> */}
-      <Footer/>  *
+      {/* <Footer/>  */} 
 
       
 
@@ -178,7 +197,17 @@ function App (){
 
         <Routes>
 
-            
+          {/*Adminlogin*/}
+
+                {/* <Route path="/" element={<Home />} />  */}
+                <Route path="/register" element={<Register />} />
+                <Route path="/categories" element={<AdminCategories />} />
+          
+        
+          {/*Adminlogin*/}
+
+
+
 
             <Route path='/' element={<Home />} />
             <Route path='innerinput' element={<Innerinput />} />
@@ -196,9 +225,6 @@ function App (){
             {/* theaterselection */}
 
             <Route path='retro/buytickets' element={<RetroBuytickets />} />
-            {/* <Route path="/retro/buytickets/:screenName" element={<RetroCosmoscinema />} />
-            <Route path="/retro/buytickets/:screenName" element={<RetroKarpagamcinema />} /> */}
-
             <Route path='touristfamily/buytickets' element={<TouristfamilyBuytickets />} />
             <Route path='hit/buytickets' element={<HitBuytickets />} />
             <Route path='thunderbolts/buytickets' element={<ThunderboltsBuytickets />} />

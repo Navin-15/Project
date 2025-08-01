@@ -87,12 +87,19 @@ useEffect(() => {
             time: selectedTime, // Use state variable
             screen: screen // Use state variable
         };
+        
+        const isLoggedIn = localStorage.getItem("isLoggedIn");
 
+        if (!isLoggedIn) {
+            // User is not logged in, redirect to login page
+            navigate('/login', { state: { redirectTo: '/booking-summary', bookingData: summaryData } });
+        } else {
         // Immediately mark selected seats as booked (this logic might need backend integration for persistence)
         setBookedSeats(prev => [...prev, ...selectedSeats.map(s => s.id)]);
         setSelectedSeats([]); // optional: clear UI selection
 
         navigate('/booking-summary', { state: summaryData });
+        }
     };
 
 

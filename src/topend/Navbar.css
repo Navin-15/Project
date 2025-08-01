@@ -18,23 +18,28 @@
     border-radius: 3px;
     border: 1px solid rgb(229, 227, 227);
     padding: 2px 2px 5px 35px;
-    margin: 10px 0px 0px 20px;   
+    margin: 25px 0px 0px 20px; 
     outline: none;
     font-size: small;
+    position: relative;
+    left: 10px;  
+    
 }
 .searchdiv{
-    width: 43%;
+    width: 40%;
     height: 35.33px;
     position: relative;
-    right: 20px;
-    top: 3px;
+    right: -80px;
+    top: -8px;
+   
 }
 .searchimg{
     height: 15px;
     position: relative;
-    bottom: 27px;
-    left: 30px;
+    bottom: 10px;
+    left: 10px;
     cursor: pointer;
+    margin: 0px 0px 0px -85px;
 }
 .hamburger{
     height: 55px;
@@ -262,22 +267,24 @@
     cursor: pointer;
 }
 .dropdownimg{
-    /* chtgpt code*/
+    
     position: relative;
     top: 6px;
     height: 10px;
-    /* chtgpt code*/
+  
     cursor: pointer;
     padding: 0px 10px 0px 0px;
 }
 .location{
     padding: 15px 0px 0px 0px;
-    margin: 0px 0px 0px 240px;
+    margin: 0px 0px 0px 300px;
     display: flex;  
     justify-content: end;
 }
 /* -------------------------------------------------------------------------------------------------- */
 /* Media query */
+
+
  @media (max-width: 767.98px){
 .searchdiv{
         display: none;
@@ -321,7 +328,7 @@
     
     .divrow{ 
         width: 92%;
-        /* position: relative; */
+      
         padding:10px 0px;
     }
     .logodiv{
@@ -389,7 +396,7 @@
         height: 35px;
     }
     .signburger{
-        /* width: 80px; */
+     
         position: absolute;
         left: 0px;
         top: -1px;
@@ -416,11 +423,11 @@
 
     .divrow{
         height: 60px;
-        /* max-width: 100%; */
+      
         display: flex;
         justify-content: space-evenly;
         width: 101.2%;
-        /* position: relative; */
+        
         padding:0px 0px;
     }
 
@@ -464,11 +471,11 @@
     } 
     .dropdownimg{
         position: relative;
-        /* right: 290%; */
+        
 
-        /* chtgpt code */
+       
         right: 200%;
-        /* chtgpt code */
+        
         
         top: 10px;
     }
@@ -666,12 +673,12 @@
     .input{
         width: 100%;
         position: relative;
-        right: -5%;
+        right: -20%;
         bottom: 3px;
     }
     .searchimg{
         position: relative;
-        left: -86%;
+        left: -71%;
         bottom: -3px;
     }
     .searchimgdiv{
@@ -766,8 +773,7 @@
  
  .top-entertainmentdiv{
     margin-top: 20px;
-    /* position: sticky;
-    top: 50px; */
+    
     
  }
 
@@ -819,7 +825,7 @@
     bottom: 32px;
     margin: 0px 0px;
     display: flex;
-    /* z-index: 2; */
+    
     background-color: rgb(255, 255, 255);
  }
  .filter{
@@ -1091,7 +1097,7 @@
         width: 100%;
         padding: 10px 6px;
         display: flex;
-        /* max-width: 100%; */
+       
         align-items: center;
         position: relative;
         flex-direction: column;
@@ -1281,7 +1287,7 @@
         width: 100%;
         padding: 10px 6px;
         display: flex;
-        /* max-width: 100%; */
+        
         align-items: center;
         position: relative;
         flex-direction: column;
@@ -1369,42 +1375,6 @@
         cursor: pointer;
     }
 }
-/* cities-popup */
-/* .popup-overlay {
-    position: fixed;
-    top: 0px;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-  } */
-  
-  /* .popup-content { */
-    /* position: relative;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 600px;
-    max-height: 80vh;
-    overflow-y: auto;
-    margin: 0 auto;
-    top: 50%; */
-    /* transform: translateY(-50%); */
-  /* } */
-  
-  /* .close-button {
-    position: absolute;
-    
-    top: 10px;
-    right: 15px;
-    background: none;
-    border: none;
-    font-size: 25px;
-    cursor: pointer;
-  } */
-
 
   .popup-overlay {
     position: fixed;
@@ -1450,15 +1420,15 @@
         position: relative;
         padding: 24px 28px;
         box-shadow: none;
-        /* border-radius: 8px; */
+       
     }
     
     .login-main-div{
         position: fixed;
         top: 0px;
-        /* left: 33%; */
+      
         left: 0px;
-        /* width: 34.5%; */
+        
         width: 100%;
         height: 100%;
         z-index: 500;
@@ -1471,7 +1441,7 @@
     .login-div{
         background-color: rgb(255, 255, 255);
         position: relative;
-        /* padding: 50px 50px; */
+       
         opacity: 1;
     }
     .get-started-div{
@@ -1549,9 +1519,9 @@
     }
 
     .continue-with-grandchild-1{
-        /* display: block; */
+        
         text-decoration: none;
-        /* vertical-align: baseline; */
+        
         background: 0px 0px;
         padding: 0px 0px 16px;
     }
@@ -1609,13 +1579,12 @@
     .google-logo-span{
         width: 19px;
         height: 19px;
-        /* margin-bottom: 5px; */
+  
     }
 
     .google-logo{
         max-width: 100%;
-        /* height:20px;
-        width: 20px; */
+        
     }
 
     .apple-icon{
@@ -1730,9 +1699,9 @@
     .login-main-div{
         position: fixed;
         top: 0px;
-        /* left: 33%; */
+        
         left: 0px;
-        /* width: 34.5%; */
+        
         width: 100%;
         height: 100%;
         z-index: 500;
@@ -1746,13 +1715,13 @@
     .login-div{
         background-color: rgb(255, 255, 255);
         position: relative;
-        /* padding: 50px 50px; */
+      
         opacity: 1;
     }
     .empty-div{
-        /* padding: 100%; */
+        
         width: 440px;
-        /* width: 100%; */
+        
     }
     
     .content-div{
@@ -1785,10 +1754,7 @@
         text-transform: none;
         color: rgb(51, 51, 51);
     }
-    /* .cls{
-        width: 24px;
-        height: 24px;
-    } */
+   
     .cls-2{
         width: 24px;
         height: 24px;
@@ -1815,9 +1781,9 @@
         padding-right: 0px;
     }
     .continue-with-grandchild-1{
-        /* display: block; */
+        
         text-decoration: none;
-        /* vertical-align: baseline; */
+   
         background: 0px 0px;
         padding: 0px 0px 16px;
     }

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
+    
 }
 
 .A{
@@ -12,9 +12,7 @@
     
 }
 .B{
-    /* max-width: 50%; */
-    /* position: absolute; */
-    /* top: 10; */
+    
     position: relative;
     
     padding: 0px;
@@ -22,31 +20,29 @@
     background-image: url('/Flipkart/innerimages/retro-innerimage.jpg'), linear-gradient(90deg, #1A1A1A 24.97%, #1A1A1A 38.3%, rgba(26, 26, 26, 0.0409746) 97.47%, #1A1A1A 100%)
     
 }
-.B-img{
-    height: 100%;
-    padding: 0px 10px;
-    opacity: 0.2;
-    position: relative;
+
+
+.B-img {
+  height: auto;
+  object-fit: cover;
 }
+
 .L{
     position: absolute;
     top: 20px;
     left: 55px;
     width: 21%;
     height: 90%;
-    /* display:block; */
-    /* border: 1px solid white; */
+    
     cursor: pointer;
      
 }
-.trailerimage{
-    border-radius: 15px;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 10;
-    
+
+.trailerimage {
+  width: 100px;
+  border-radius: 8px;
 }
+
 .C{
     background-color: rgb(52, 50, 50);
     border-radius: 10px;
@@ -86,14 +82,11 @@
     width: 100%;
     background-color: black;
 }
-/* .dev-one{
-    display: flex;
-} */
-/* ----------------------------------------------------------------------------------------------- */
-/* dev-two */
+
+
 
 .dev-two{
-    /* border: 1px solid white; */
+
     position: absolute;
     top: 23%;
     left: 29%;
@@ -140,22 +133,22 @@
     font-size: 30px;
     color: aliceblue;
 }
-.butt{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-left: 4px;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 8px;
-    color: rgb(26, 26, 26);
+
+
+.butt {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
 }
+
 .butt-span{
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
 }
-/* movie-about-div */
+
 .movie-about-div{
     margin-top: 16px;
 }
@@ -181,9 +174,11 @@
     align-self: flex-start;
     margin-top: 8px;
 }
-.di{
-    color: black;
-    text-decoration: none;
+
+ .di, .journer {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
 }
 .di:hover{
     text-decoration: underline;
@@ -191,7 +186,7 @@
 .comma{
     padding: 0px 4px 0px 0px;
 }
-/* duration */
+
 .duration:last-child{
     margin-top: 16px;
 }
@@ -204,23 +199,13 @@
     line-height: 24px;
     letter-spacing: 0.2px;
 }
-.dot{
-    padding: 0px 8px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-}
-.journer{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    color: rgb(255, 255, 255);
-    margin-right: 0px;
-    text-decoration: none;
 
+ .dot {
+  font-size: 18px;
+  color: #888;
 }
+
+
 .journer-comma{
     padding: 0px 4px 0px 0px;
     font-size: 16px;
@@ -228,54 +213,7 @@
     line-height: 24px;
     letter-spacing: 0.2px;
 }
-/* book-tickets-div */
-.book-tickets-div{
-    margin-top: 32px;
-}
-.book-tickets-button-div{
-    text-align: center;
-    z-index: 99;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    bottom: 0px;
-    position: relative;
-    width: auto;
-    padding: 0px;
-    background: none;
-    max-width: 216px;
-    flex-grow: 1;
-    box-shadow: none;
-}
-.book-tickets-button{
-    
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 8px;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
 
-    border: 1px solid rgb(248, 68, 100);
-    color: rgb(255, 255, 255);
-    background-color: rgb(248, 68, 100);
-    border-radius: 8px;
-}
-.book-tickets-text-div{
-    letter-spacing: 0.2px;
-    padding: 12px 8px;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 24px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.book-tickets{
-    font-weight: 600;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-}
-/* dev-three */
 .dev-three{
     position: absolute;
     top: 30px;
@@ -286,7 +224,7 @@
     height: 48px;
     width: 122px;
     background-color: rgba(94, 90, 90, 0.8); 
-    /* background-color: rgba(34, 34, 34, 0.8); //old color// */
+   
     opacity: 0.8;
     padding: 0px 16px;
     cursor: pointer;
@@ -313,90 +251,23 @@
     color: rgb(255, 255, 255);
 }
 
-/* invisible-section */
 
-.inssivible-section{
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 8px 0px;
-    display: flex;
-    width: 100%;
-    animation: 0.3s ease 0s 1 normal none running lbWRkT;
-    background-color: rgb(255, 255, 255);
-    position: sticky;
-    top: 0px;
-    z-index: 100;
-    height: 86px;
+
+
+.details-of-movie-div h4 {
+  margin-bottom: 12px;
+  font-weight: bold;
 }
-.invisible-div-one{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 92%;
-    max-width: 1240px;
-    margin: 0px auto;
+
+.details-of-movie-div p {
+  color: #bbb;
 }
-.invisible-div-left{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding: 16px 16px 16px 0px;
-    max-width: calc(100% - 446px);
-}
-.invisible-div-retro{
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 30px;
-    color: rgb(0, 0, 0);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
-}
-.invisible-div-right{
-    overflow: auto;
-    min-height: auto;
-    position: relative;
-    width: auto;
-    padding: 0px;
-    background: none;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    max-width: 216px;
-    flex-grow: 1;
-    box-shadow: none;
-}
-.invisible-button-div{
-    text-align: center;
-    z-index: 99;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    bottom: 0px;
-    position: relative;
-    width: auto;
-    padding: 0px;
-    background: none;
-    max-width: 216px;
-    flex-grow: 1;
-    box-shadow: none;
-}
-/* details-of-movie-div */
-.details-of-movie-div{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    /* max-width: 1240px; */
-    margin: 0px auto;
-    width: 100%;
-}
+
 .inner-details-of-movie-div{
     background-color: rgb(255, 255, 255);
     flex: 1 1 0%;
     width: 100%;
-    /* max-width: calc(100% - 314px); */
+   
     overflow: auto hidden;
     height: 100%;
     padding-top: 0px;
@@ -428,11 +299,11 @@
     padding-top: 10px;
 }
 .line{
-    /* border: 1px solid black; */
+   
     margin-left: 65px;
 }
 
-/* component-2-parent */
+
 .component-2-parent{
     position: relative;
     border-top: 1px solid rgb(229, 229, 229);
@@ -475,7 +346,7 @@
     scroll-snap-align: center;
     text-decoration: none;
     max-width: 120px;
-    /* margin-left: 32px; */
+   
     cursor: pointer;
     margin-left: 30px;
 }
@@ -485,8 +356,7 @@
     min-height: 120px;
     max-width: 120px;
     min-width: 120px;
-    /* background: rgb(245, 245, 245); */
-    /* border-radius: 8px; */
+   
     position: relative;
     z-index: 1;
 }
@@ -506,12 +376,9 @@
     width: 120px;
     height: 120px;
 
-    /* border-radius: 8px; */
+    
     transition: 0.5s;
-    /* width: 100%; */
-    /* min-height: inherit; */
-    /* max-height: inherit; */
-    /* opacity: 0; */
+    
     object-fit: cover;
 }
 .actor-name{
@@ -530,8 +397,40 @@
     letter-spacing: 0.2px;
     margin-top: 25px;
 }
-/* -------------------------------------------------------------------------------------------------------------------------------------- */
-/* media query */
+
+.book-tickets-button {
+  background-color: #e50914;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+}
+
+.book-tickets-button:hover {
+  background-color: #ff1f2a;
+}
+
+@media (max-width: 768px) {
+  .dev-one,
+  .dev-two,
+  .dev-three {
+    position: static !important;
+    padding: 1rem;
+  }
+
+  .book-tickets-button {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .trailerimage {
+    width: 100%;
+  }
+}
+
 
 @media (min-width: 425px) and (max-width: 767.98px){
     
@@ -539,11 +438,10 @@
         width: 114%;
         position: relative;
         left: -20px;
-        /* margin: 0px 0px; */
+        
     }
     .moviediv{
-        /* width: 100px; */
-        /* height: 100vh; */
+        
         position: relative;
         left: -30px;
         padding: 10px 0px;
@@ -578,25 +476,24 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        /* overflow: hidden; */
+        
     }
 
     .catdiv{
         max-width: 100%;
         position: relative;
         left: -0px;
-        /* margin: 0px 0px; */
+        
     }
     .moviediv{
         max-width: 80px;
-        /* height: 100vh; */
+        
         position: relative;
         left: -43px;
         padding: 10px 0px;
     }
     .imgdiv{
-        /* display: block; */
-        /* flex-wrap: wrap; */
+        
         padding: 0px 10px;
         margin: 0px 0px 0px 0px;
         max-width: 6rem;
@@ -626,18 +523,17 @@
         width: 100%;
         position: relative;
         left: -0px;
-        /* margin: 0px 0px; */
+       
     }
     .moviediv{
         max-width: 80px;
-        /* height: 100vh; */
+        
         position: relative;
         left: -42.5px;
         padding: 5px 0px;
     }
     .imgdiv{
-        /* display: block; */
-        /* flex-wrap: wrap; */
+       
         padding: 0px 1px;
         margin: 0px 1px;
         max-width: 4.5rem;
@@ -661,3 +557,6 @@
     }
     
 } 
+
+/* responsive code */
+

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 
 } */
+
+/* .slider-carousel{
+    border-radius: 30px;
+} */
 .carousel-1{
     width: 100%;
     border-radius: 10px;
@@ -53,11 +57,11 @@
 .carousel-indicators{
     display: none;
 }
-/* Media query */
+
 
 @media (min-width: 425px) and (max-width: 767.98px){
     .car{
-        /* background-color: red; */
+        
         width:150%        
     }
     .carousel-control-prev-icon{
@@ -96,10 +100,11 @@
 
 @media (min-width: 768px) and (max-width: 1023.98px){
 
-.car{
-        width: 100%;
-    }
 
+.carousel-1{
+    width: 100%;
+    border-radius: 10px;
+}
 
 .carousel-control-prev-icon{
     

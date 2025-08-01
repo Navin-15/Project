@@ -1,6 +1,6 @@
 
 
-// RetroBuytickets.jsx
+RetroBuytickets.jsx
 import React, { useEffect, useState} from 'react';
 import DateBar from './Datebar'
 import FilterBar from './Filterbar'
@@ -27,7 +27,7 @@ function RetroBuytickets() {
                 theater: theaterName,
                 time: showTime,
                 screen: screen,
-                movieName: "Retro",  // Assuming "Retro" is static for this page
+                movieName: "Retro",  
                  
             }
         });
@@ -39,12 +39,12 @@ function RetroBuytickets() {
                 <Navbar/>
                 <Categories/>
 
-                <div className="w-75 ms-5 ps-4 ">
-                    <div className=" py-1">
-                        <div className="ms-2 mt-2">
+                <div className="w-75 ms-5 ps-4 bg danger">
+                    <div className=" py-1 ">
+                        <div className="ms-2 mt-2 w-25">
                             <div className="name">Retro - (Tamil)</div>
                         </div>
-                        <div className="abtthismovie">
+                        <div className="abtthismovie mt-3 ms-2  w-25">
                             <a href="" className=" outline">Action</a>
                             <a href="" className=" outline">Thriller</a>
                         </div>
@@ -73,16 +73,16 @@ function RetroBuytickets() {
                                 <div className="theaterone-leftcol-child1">
                                     <div className="theat">
                                         <div className="cinemaname-div">
-                                            <div className="heart-div">
+                                            <div className="heart-div w-25">
                                                 <img src={heartoff} alt="" style={{height:"20px", width:"20px", maxWidth:"100%"}} />
                                             </div>
                                             <div className="cinemaname-div" style={{maxWidth:"275px"}}>
                                                 <div className="cinemaname">Cosmo Cinemas PEELAMEDU AC 4K RGB Lase:Coimbatore</div>
                                             </div>
                                         </div>
-                                        <div className="info">
+                                        <div className="info w-25">
                                             <div className="d-flex">
-                                                <span><img src={infoicon} alt="" style={{height:"16px", width:"16px", maxWidth:"100%"}} /></span>
+                                                <span><img src={infoicon} alt="" style={{height:"16px", width:"18px", maxWidth:"100%"}} /></span>
                                                 <span className='infotext'>INFO</span>
                                             </div>
                                         </div>
@@ -360,5 +360,7 @@ function RetroBuytickets() {
 export default RetroBuytickets;
 //============================================                ==============================================
 
-// gemini code  fully corrected
+// responsive code
+
+
 

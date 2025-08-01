@@ -35,7 +35,7 @@ const Seatlayout = () => {
     const [movieName, setMovieName] = useState(""); // State to store movie name
     const [screen, setSelectedScreen] = useState(""); // State to store movie name
  
-//----------------------------------------------------============================================
+
 useEffect(() => {
         // Retrieve data from location.state
         if (location.state) {
@@ -67,41 +67,19 @@ useEffect(() => {
     fetchBookedSeats();
   }
 }, [theaterName, movieName, selectedDate, selectedTime, screen]);
-//-------------------------------------------------------------------------------------------------------
 
-
-
-
-    // useEffect(() => {
-    //     // Retrieve data from location.state
-    //     if (location.state) {
-    //         setTheaterName(location.state.theater || "");
-    //         setSelectedTime(location.state.time || "");
-    //         setMovieName(location.state.movieName || "");
-    //         setSelectedScreen(location.state.screen || "");
-    //         if (location.state.selectedSeats) {
-    //             setSelectedSeats(location.state.selectedSeats);
-    //         }
-    //     }
-
-    //     const fetchBookedSeats = async () => {
-    //         try {
-    //             const response = await axios.get('http://localhost:5000/api/bookings');
-    //             const allBooked = response.data.flatMap(b => b.seats);
-    //             setBookedSeats(allBooked);
-    //         } catch (err) { console.error(err); }
-    //     };
-    //     fetchBookedSeats();
-    // }, [location.state]); // Add location.state to dependency array
-
-//----------------------------------------------------============================================
     const handlePreviousPage = () => {
         window.scrollTo(0, 0);
         navigate(-1);
     };
 
+
     const handlepay = () => {
-        
+        if (selectedSeats.length === 0) {
+            alert("Please select at least one seat before paying.");
+            return;
+        }
+
         const summaryData = {
             movieName: movieName, // Use state variable
             theater: theaterName, // Use state variable
@@ -112,16 +90,18 @@ useEffect(() => {
             screen: screen // Use state variable
         };
 
-        if (selectedSeats.length === 0) {
-            alert("Please select at least one seat before paying.");
-            return;
-        }
+        const isLoggedIn = localStorage.getItem("isLoggedIn");
 
+        if (!isLoggedIn) {
+            // User is not logged in, redirect to login page
+            navigate('/login', { state: { redirectTo: '/booking-summary', bookingData: summaryData } });
+        } else {
         // Immediately mark selected seats as booked (this logic might need backend integration for persistence)
         setBookedSeats(prev => [...prev, ...selectedSeats.map(s => s.id)]);
         setSelectedSeats([]); // optional: clear UI selection
 
         navigate('/booking-summary', { state: summaryData });
+        }
     };
 
 
@@ -259,4 +239,7 @@ useEffect(() => {
 
 export default Seatlayout;
 //  //  //  //  //  //  //  //  //  //  //  //  //  //
+
+//responsive code
+
 

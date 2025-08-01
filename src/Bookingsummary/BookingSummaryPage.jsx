@@ -124,7 +124,7 @@ function BookingSummaryPage() {
             {/* <Navbar /> */}
             <div className="container my-5 p-3 bg-light">
                 <h3 className="mb-4">🎫 Booking Summary</h3>
-                <div className="card p-4 shadow-sm">
+                <div className="card p-4 shadow-sm bg-warning">
                     <p className="card-text fw-medium"><strong>Theater:</strong> {theater}</p>
                     <p className="card-text fw-medium"><strong>Movie:</strong> {movieName}</p>
                     <p className="card-text fw-medium"><strong>Screen:</strong> {screen}</p> 
