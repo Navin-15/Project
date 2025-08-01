@@ -95,7 +95,7 @@
       @media (min-width: 425px) and (max-width: 575.98px) { 
 
          .imageholdingdiv{ 
-            width: 150%;
+            width: 100%;
             margin: 0px auto;
             }
 
