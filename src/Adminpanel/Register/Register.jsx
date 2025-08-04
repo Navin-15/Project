@@ -630,13 +630,13 @@ function Register() {
 
 
   return (
-    <body>
+    <body className='bg-secondary'>
      
       <div className="sideside">
         <Adminsidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}  />
       </div>
 
-      <div className="min-h-screen bg-warning reg-div bg-gray-100 flex flex-col items-center py-8 px-4 font-sans">
+      <div className="min-h-screen reg-div bg-gray-100 flex flex-col items-center py-8 px-4 font-sans">
       {/* Side component (if it exists and is needed for overall layout) */}
       
 
@@ -644,7 +644,7 @@ function Register() {
      
 
       {/* Registration/Edit Form Card */}
-      <div className=" regiform bg-info p-3 p-6 sm:p-8 rounded-xl shadow-2xl w-full max-w-md mx-auto my-8 border border-gray-200">
+      <div className=" regiform p-3 p-6 sm:p-8 rounded-xl shadow-2xl w-full max-w-md mx-auto my-8 border border-gray-200">
         <h2 className="text-3xl font-extrabold mb-8 text-center text-gray-900">
           {editingIndex !== null ? 'Edit User' : 'Register Account'}
         </h2>
@@ -738,7 +738,7 @@ function Register() {
       </div>
 
       {/* Registered Users Table */}
-      <div className="bg-secondary text-light  mt-3 my-8 p-6 sm:p-8 rounded-xl shadow-2xl w-full max-w-4xl mx-auto border border-gray-200 overflow-x-auto">
+      <div className=" text-light  mt-3 my-8 p-6 sm:p-8 rounded-xl shadow-2xl w-full max-w-4xl mx-auto border border-gray-200 overflow-x-auto">
         <h2 className="text-3xl font-extrabold mb-6 text-center text-gray-900">Registered Users</h2>
         {registeredUsers.length > 0 ? (
           <table className="min-w-full  divide-y divide-gray-200">
@@ -762,7 +762,7 @@ function Register() {
                 </th>
               </tr>
             </thead>
-            <tbody className="bg-secondary text-light divide-y divide-gray-200">
+            <tbody className=" text-light divide-y divide-gray-200">
               {registeredUsers.map((user, index) => (
                 <tr key={index} className="hover:bg-gray-50 transition-colors duration-150">
                   <td className="py-3 px-4 sm:px-6 whitespace-nowrap text-sm text-gray-800">{user.fname}</td>

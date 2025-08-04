@@ -288,6 +288,7 @@
 // }
 
 import React, { useState } from 'react';
+import Adminsidebar from '../AdminSide/Adminsidebar';
 
 export default function TheaterManager() {
   const [cinema, setCinema] = useState('');
@@ -297,6 +298,8 @@ export default function TheaterManager() {
   const [atmos, setAtmos] = useState('');
   const [entries, setEntries] = useState([]);
   const [editingIndex, setEditingIndex] = useState(null);
+
+  const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
 
   const handleAddOrUpdate = () => {
     if (!cinema || !location || !hall || !showtime || !atmos) {
@@ -337,8 +340,18 @@ export default function TheaterManager() {
     setEntries(updatedEntries);
   };
 
+  const OpenSidebar = () => {
+    setOpenSidebarToggle(!openSidebarToggle);
+  };
+
   return (
-    <div style={{ maxWidth: '800px', margin: '40px auto', fontFamily: 'Arial, sans-serif' }}>
+
+      <>
+      <div className="sideside">
+        <Adminsidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}  />
+      </div>
+
+    <div className='bg-secondary py-1' style={{ maxWidth: '980px', margin: '5px auto', fontFamily: 'Arial, sans-serif',position: 'relative', left: '145px'}}>
       <h2 style={{ marginBottom: '20px', textAlign: 'center' }}>
         {editingIndex !== null ? 'Edit' : 'Add'} Theater Entry
       </h2>
@@ -415,7 +428,7 @@ export default function TheaterManager() {
               <th style={thStyle}>Actions</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody >
             {entries.map((entry, index) => (
               <tr key={index} style={{ borderBottom: '1px solid #ddd' }}>
                 <td style={tdStyle}>{entry.cinema}</td>
@@ -443,6 +456,7 @@ export default function TheaterManager() {
         </table>
       )}
     </div>
+      </>
   );
 }
 

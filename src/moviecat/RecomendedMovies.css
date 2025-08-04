@@ -223,12 +223,17 @@
 }
 
 .movie-img {
-  width: 100%;
+  width: 80%;
   height: auto;
   object-fit: cover;
+  margin-left: 20px;
+}
+.movie-nam {
+  margin-left: 20px;
 }
 
 .movie-genres {
   font-size: 0.9rem;
   margin: 0;
+   margin-left: 20px;
 }

@@ -516,7 +516,7 @@ import dropdownImg from '/images/dropdownimg.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Navbar() {
-  const [city, setCity] = useState(localStorage.getItem('selectedCity') || 'Select Location');
+  const [city, setCity] = useState(localStorage.getItem('selectedCity') || 'Location');
   const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('isLoggedIn') === 'true');
   const navigate = useNavigate();
 
@@ -545,7 +545,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-md navbar-light bg-white py-2 shadow-sm">
       <div className="container-fluid ">
         <a className="navbar-brand d-flex align-items-center" onClick={handleHome} style={{ cursor: 'pointer' }}>
-          <img src={bookmyshowlogo} alt="Logo" height="40" />
+          <img className='' src={bookmyshowlogo} alt="Logo" height="40" />
         </a>
         <button
           className="navbar-toggler"
@@ -576,13 +576,13 @@ function Navbar() {
             </button>
           </form>
 
-          <ul className="navbar-nav ms-auto align-items-center gap-3">
-            <li className="nav-item d-flex align-items-center">
-              <span className="nav-link p-0 " onClick={handleCityPicker} style={{ cursor: 'pointer' }}>
-                {city} <img src={dropdownImg} alt="▼" height="16" />
+          <ul className="navbar-nav ms-auto align-items-center gap-5">
+            <li className="nav-item d-flex align-items-center me-3">
+              <span className="nav-link p-0 d-flex " onClick={handleCityPicker} style={{ cursor: 'pointer' }}>
+                {city} <img className='mt-2' src={dropdownImg} alt="▼" height="12" />
               </span>
             </li>
-            <li className="nav-item w-50">
+            <li className="nav-item w-50 me-3">
               {isLoggedIn ? (
                 <>
                   <span className="nav-link">Hi, Guest</span>

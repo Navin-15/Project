@@ -152,10 +152,10 @@ function RecomendedMovies() {
         }, {
           img: Thodarum, title: "Thodarum", genres: "Drama/Family/Thriller", onClick: movieRoutes.thodarum
         }].map((movie, idx) => (
-          <div key={idx} className="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div key={idx} className="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2 ">
             <div className="movie-card" onClick={() => { window.scrollTo(0, 0); movie.onClick(); }}>
-              <img src={movie.img} alt={movie.title} className="img-fluid rounded-3 movie-img" />
-              <h6 className="fw-bold mt-2">{movie.title}</h6>
+              <img src={movie.img} alt={movie.title} className="img-fluid rounded-3 movie-img mt-2" />
+              <h6 className="fw-bold mt-2 movie-nam">{movie.title}</h6>
               <p className="text-muted movie-genres">{movie.genres}</p>
             </div>
           </div>

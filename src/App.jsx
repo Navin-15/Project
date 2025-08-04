@@ -134,16 +134,20 @@ import Adminheader from './Adminpanel/AdminHead/Adminheader.jsx'
 import Adminsidebar from './Adminpanel/AdminSide/Adminsidebar.jsx'
 import Adminhome from './Adminpanel/AdminHome/Adminhome.jsx'
 import Register from './Adminpanel/Register/Register.jsx'
-import AdminCategories from './Adminpanel/Theaterdetails/AdminCategories.jsx'
+// import AdminCategories from './Adminpanel/Theaterdetails/AdminCategories.jsx'
+import TheaterManager from './Adminpanel/Theaterdetails/Theatermanage.jsx';
+import Moviemanage from './Adminpanel/moviemanager/Moviemanage.jsx';
+
+
 
 
 
 function Home() {
-  const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
+  // const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
 
-  const OpenSidebar = () => {
-    setOpenSidebarToggle(!openSidebarToggle)
-  }
+  // const OpenSidebar = () => {
+  //   setOpenSidebarToggle(!openSidebarToggle)
+  // }
 
   return (
    <>
@@ -161,9 +165,9 @@ function Home() {
       <Navbar/>
       <Categories/>
       <Slider/>
-      <RecomendedMovies/>  
+      <RecomendedMovies/>   
       {/* <Comedyshow/> */}
-      {/* <Footer/>  */} 
+      <Footer/>  
 
       
 
@@ -194,15 +198,18 @@ function App (){
     
       {/* <Router> */}
 
-
+       
         <Routes>
 
           {/*Adminlogin*/}
 
-                {/* <Route path="/" element={<Home />} />  */}
+                <Route path="/admindashboard" element={<Adminhome />} /> 
                 <Route path="/register" element={<Register />} />
-                <Route path="/categories" element={<AdminCategories />} />
-          
+                {/* <Route path="/categories" element={<AdminCategories />} /> */}
+                <Route path="/theatermanage" element={<TheaterManager />} />
+                <Route path="/moviemanage" element={<Moviemanage />} />
+
+              
         
           {/*Adminlogin*/}
 
@@ -323,6 +330,7 @@ function App (){
 
 
         </Routes>
+      
     {/* </Router> */}
     </BrowserRouter>
 

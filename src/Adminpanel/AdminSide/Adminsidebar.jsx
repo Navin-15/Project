@@ -21,40 +21,41 @@ function Adminsidebar({openSidebarToggle, OpenSidebar}) {
             </div>
     
             <ul className='sidebar-list'>
-                <li className='sidebar-list-item'onClick={() => navigate('/')} >
-                    <a href="">
+                <li className='sidebar-list-item text-light'onClick={() => navigate('/admindashboard')} >
+                    <p>
                       <BsGrid1X2Fill className='icon'/> Dashboard
-                    </a>
+                    </p>
                 </li>
-                <li className='sidebar-list-item' onClick={() => navigate('/register')}>
-                    <a href="">
+                <li className='sidebar-list-item text-light' onClick={() => navigate('/register')}>
+                    <p>
                       <BsFillArchiveFill className='icon'/> Usermodule
-                    </a>
+                    </p>
                 </li>
-                <li className='sidebar-list-item theaterdetails'>
-                    <a href="">
+                <li className='sidebar-list-item theaterdetails text-light' onClick={() => navigate('/theatermanage')}>
+                    <p>
                       <BsFillGrid3X3GapFill className='icon'/> Theater Details
-                    </a>
-                        <li className=' theaterdetailssublist' onClick={() => navigate('/categories')}>
+                    </p>
+                        {/* <li className=' theaterdetailssublist' onClick={() => navigate('/categories')}>
                           <a href="" className='anc'>
                             <BsFillGrid3X3GapFill className='icon'/> Categories
                           </a>
-                        </li>
-                        <li className=' theaterdetailssublist'>
+                        </li> */}
+                        {/* <li className=' theaterdetailssublist' onClick={() => navigate('/theatermanage')}>
                           <a href="" className='anc' >
-                            <BsFillGrid3X3GapFill className='icon'/> Theater Details
+                            <BsFillGrid3X3GapFill className='icon'/> Theater manage
                           </a>
-                        </li>
-                        <li className=' theaterdetailssublist'>
+                        </li> */}
+                        {/* <li className=' theaterdetailssublist'>
                           <a href="" className='anc'>
                               <BsFillGrid3X3GapFill className='icon'/> Manage Panel
                           </a>
-                        </li>
+                        </li> */}
                 </li>
-                <li className='sidebar-list-item'>
-                    <a href="">
-                      <BsPeopleFill className='icon'/> Booking Details
-                    </a>
+                <li className='sidebar-list-item text-light' onClick={() => navigate('/moviemanage')}>
+                    <p>
+                      <BsPeopleFill className='icon'/> Movie Management
+                    </p>
+                        
                 </li>
                 
             </ul>
